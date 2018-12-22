@@ -1,5 +1,6 @@
 # Lora_Ambient
 Loraモジュールによる通信  
+全体図(アンテナをつけていない状態)  
 ![all_system](./fig/all_system.png)
 
 # 1.使用製品
@@ -24,7 +25,15 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
 ### 子機の電子回路でES920LRのRESET(24番)ピンにつながっているプルアップ抵抗は不要（図で示すと以下のようになる）
 ![lora_arduino](./fig/lora_arduino.jpg)
 
-# 4.諸注意
+# 4.写真
+EsprDeveloper(子機側)  
+![esprdeveloper](./fig/esprdeveloper.png)
+RaspberryPi3(親機側)  
+![raspberrypi3](./fig/raspberrypi3.png)
+IoTサービスAmbientによるデータの視覚化  
+![ambient](./fig/ambient.png)
+
+# 5.諸注意
 ### 初めてラズパイでシリアル通信をする場合の注意
 ・「ラズベリーパイの設定(Raspberry Pi Configuration)」でシリアル通信を有効化する  
 ・再起動が必要  
@@ -38,7 +47,7 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
     $ pip freeze | grep ambient  
       ambient==0.1.2  
       
-# 5.現在の問題
+# 6.現在の問題
 ### UNOとloraモジュールのUART通信が上手くいかない
 EsprDeveloperで出来たLora通信をarduino unoでも試してみたけど、上手く行かなかった…  
 原因：SoftwareSerialの115200だと不安定らしい？ https://www.petitmonte.com/robot/softwareserial_bug.html  
