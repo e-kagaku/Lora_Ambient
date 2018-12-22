@@ -109,7 +109,7 @@ void send2LoRa() {
     unsigned long t;
 
     strcpy(obuf, "res=(");
-    dtostrf(12.345, 12, 8, &obuf[strlen(obuf)]);
+    dtostrf(12.345, 12, 8, &obuf[strlen(obuf)]); //ここで送るデータを指定（今回は適当な数字だが、実際にはgps.location.lat()とか）
     strcat(obuf, ",");
     dtostrf(23.456, 12, 8, &obuf[strlen(obuf)]);
     strcat(obuf, ",");
