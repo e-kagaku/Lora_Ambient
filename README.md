@@ -24,15 +24,15 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
 ![lora_arduino](./fig/lora_arduino.jpg)
 
 # 4.諸注意
-※初めてラズパイでシリアル通信をする場合の注意  
+### 初めてラズパイでシリアル通信をする場合の注意
 ・「ラズベリーパイの設定(Raspberry Pi Configuration)」でシリアル通信を有効化する  
 ・再起動が必要  
 ・$sudo leafpad /boot/cmdline.txt というコマンドで開いたファイルを編集する  
 ・「console=serial0,115200」を削除し、保存、再起動  
 ・これでシリアル通信ができるようになるはず  
 
-※AmbientのPythonライブラリ（import ambient）を使う方法
+### AmbientのPythonライブラリ（import ambient）を使う方法
 ・以下のコマンドでインストール  
-    $ pip install git+https://github.com/AmbientDataInc/ambient-python-lib.git
-    $ pip freeze | grep ambient
-      ambient==0.1.2
+    $ pip install git+https://github.com/AmbientDataInc/ambient-python-lib.git  
+    $ pip freeze | grep ambient  
+      ambient==0.1.2  
