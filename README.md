@@ -32,9 +32,9 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
 
 # 4.写真
 EsprDeveloper(子機側)  
-<img src="./fig/esprdeveloper.png" width="320">
+<img src="./fig/esprdeveloper.png" width="320">  
 RaspberryPi3(親機側)  
-<img src="./fig/raspberrypi3.png" width="320">
+<img src="./fig/raspberrypi3.png" width="320">  
 IoTサービスAmbientによるデータの視覚化  
 <img src="./fig/ambient.png" width="320">
 
