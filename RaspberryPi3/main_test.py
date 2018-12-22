@@ -118,4 +118,4 @@ while (True):
     print(Test)
     sys.stdout.flush()
 
-    am1.send({'d1': rssi, 'd2': Test[0], 'd3': Test1], 'd4': Test[2]})
+    am1.send({'d1': rssi, 'd2': Test[0], 'd3': Test[1], 'd4': Test[2]})
