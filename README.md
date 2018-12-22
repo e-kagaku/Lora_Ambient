@@ -1,8 +1,8 @@
 # Lora_Ambient
 Loraモジュールによる通信  
 全体図(アンテナをつけていない状態)  
-![all_system](./fig/all_system.png)
-<img src="./fig/all_system.png" width="***サイズ***">
+
+<img src="./fig/all_system.png" width="320">
 
 # 1.使用製品
 今回はEASEL社のモジュールを使用した。  
