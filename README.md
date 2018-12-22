@@ -41,5 +41,8 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
 ### UNOとloraモジュールのUART通信が上手くいかない
 EsprDeveloperで出来たLora通信をarduino unoでも試してみたけど、上手く行かなかった…  
 原因：SoftwareSerialの115200だと不安定らしい？ https://www.petitmonte.com/robot/softwareserial_bug.html  
-解決法：UNOとEsprDeveloperをハードウェアシリアルやSoftwareSerialの9600で通信してデータを送る？
+解決法：UNOとEsprDeveloperをハードウェアシリアルやSoftwareSerialの9600で通信してデータを送る？  
+https://shizenkarasuzon.hatenablog.com/entry/2018/07/24/225915  
+http://discexuno.wp.xdomain.jp/arduino/arduino_and_esp8266_2/  
+https://qiita.com/T-YOSH/items/0ce41136c535c723affb
 
