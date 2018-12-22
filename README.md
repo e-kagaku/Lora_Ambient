@@ -2,6 +2,7 @@
 Loraモジュールによる通信  
 全体図(アンテナをつけていない状態)  
 ![all_system](./fig/all_system.png)
+<img src="./fig/all_system.png" width="***サイズ***">
 
 # 1.使用製品
 今回はEASEL社のモジュールを使用した。  
@@ -16,8 +17,9 @@ http://easel5.com/download/
 # 3.【実験】Arduinoとraspberry pi3とにつないで通信をしてみる
 ・このサイトを参考にした　https://ambidata.io/examples/lora-2/  
 ・コードはここ　https://github.com/AmbientDataInc/LoRa-rssi-measure  
-・結果はこちらに公開　https://ambidata.io/ch/channel.html?id=8279
-・変更すべき箇所が２点(以下に示す)あり、変更後のコードがLora_Ambient/ESPrDeveloper/ESP_Test_LoRa.inoとLora_Ambient/RaspberryPi3/main_test.pyである
+・結果はこちらに公開　https://ambidata.io/ch/channel.html?id=8279  
+・変更すべき箇所が２点(以下に示す)あり、変更後のコードがLora_Ambient/ESPrDeveloper/ESP_Test_LoRa.inoとLora_Ambient/RaspberryPi3/main_test.pyである  
+・基本的にESP_Test_LoRa.inoの119～125行目をいじって、データを送ればよい
 
 ### 親機側のプログラムmain.pyのsetMode関数の77行目と78行目の間に、以下の４行を追加
 ```
