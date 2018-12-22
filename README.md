@@ -7,7 +7,7 @@ Loraモジュールによる通信
 今回はEASEL社のモジュールを使用した。  
 ・Loraモジュール本体　https://tokyodevices.jp/items/251  
 ・ダイポールアンテナ　https://tokyodevices.jp/items/243  
-・ピッチ変換基盤　https://cosmobrain.stores.jp/items/5bdd4b20ef843f45760000e4等  
+・ピッチ変換基盤　https://cosmobrain.stores.jp/items/5bdd4b20ef843f45760000e4 等  
 
 # 2.モジュール情報のありか
 コマンド仕様などの詳しい情報は以下からダウンロード可能  
