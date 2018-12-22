@@ -18,11 +18,12 @@ http://easel5.com/download/
 ・コードはここ　https://github.com/AmbientDataInc/LoRa-rssi-measure  
 ・変更すべき箇所が２点  
 ### 親機側のプログラムmain.pyのsetMode関数の77行目と78行目の間に、以下の４行を追加
-`sendcmd('node 1\r\n') //親機に設定`  
-`sendcmd('ownid 0000\r\n') //自ノードアドレスを0に`  
-`sendcmd('rssi 1\r\n') //信号強度情報を取得`  
-`sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得`  
-
+```
+sendcmd('node 1\r\n') //親機に設定  
+sendcmd('ownid 0000\r\n') //自ノードアドレスを0に  
+sendcmd('rssi 1\r\n') //信号強度情報を取得  
+sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得  
+```
 ### 子機の電子回路でES920LRのRESET(24番)ピンにつながっているプルアップ抵抗は不要（図で示すと以下のようになる）
 ![lora_arduino](./fig/lora_arduino.jpg)
 
@@ -44,9 +45,11 @@ IoTサービスAmbientによるデータの視覚化
 
 ### AmbientのPythonライブラリ（import ambient）を使う方法
 ・以下のコマンドでインストール  
-    $ pip install git+https://github.com/AmbientDataInc/ambient-python-lib.git  
-    $ pip freeze | grep ambient  
-      ambient==0.1.2  
+```
+$ pip install git+https://github.com/AmbientDataInc/ambient-python-lib.git  
+$ pip freeze | grep ambient  
+  ambient==0.1.2
+```
       
 # 6.現在の問題
 ### UNOとloraモジュールのUART通信が上手くいかない
