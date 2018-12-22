@@ -1,5 +1,6 @@
 # Lora_Ambient
 Loraモジュールによる通信
+![all_system](./fig/all_system.png)
 
 # 1.使用製品
 今回はEASEL社のモジュールを使用した。  
