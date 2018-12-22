@@ -37,7 +37,7 @@ sendcmd('rcvid 1\r\n') //送信元アドレス情報を取得
     $ pip freeze | grep ambient  
       ambient==0.1.2  
       
-# 現在の問題
+# 5.現在の問題
 ### UNOとloraモジュールのUART通信が上手くいかない
 EsprDeveloperで出来たLora通信をarduino unoでも試してみたけど、上手く行かなかった…  
 原因：SoftwareSerialの115200だと不安定らしい？ https://www.petitmonte.com/robot/softwareserial_bug.html  
