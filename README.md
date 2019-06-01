@@ -14,11 +14,15 @@ Loraモジュールによる通信
 http://easel5.com/download/  
 
 # 3.【実験】Arduinoとraspberry pi3とにつないで通信をしてみる
+・GPSや温湿度データを長距離通信したい  
 ・このサイトを参考にした　https://ambidata.io/examples/lora-2/  
-・コードはここ　https://github.com/AmbientDataInc/LoRa-rssi-measure  
-・結果はこちらに公開　https://ambidata.io/ch/channel.html?id=8279  
-・変更すべき箇所が２点(以下に示す)あり、変更後のコードがLora_Ambient/ESPrDeveloper/ESP_Test_LoRa.inoとLora_Ambient/RaspberryPi3/main_test.pyである  
-・基本的にESP_Test_LoRa.inoの119～125行目をいじって、データを送ればよい
+・参考コードはここ　https://github.com/AmbientDataInc/LoRa-rssi-measure  
+・結果はこちらに公開(いずれ停止すると思うので、ambientは自分のアカウントを作ってやってみた方が良い)　https://ambidata.io/ch/channel.html?id=8279  
+・変更すべき箇所が２点(以下に示す)あり、変更後のコードがLora_Ambient/ESPrDeveloper/ESP_Test_LoRa.inoとLora_Ambient/RaspberryPi3/main_test.pyである(このコードをESPrDeveloperとRaspberryPi3にそれぞれ用意して実行する)  
+・基本的にESP_Test_LoRa.inoの119～125行目をいじれば、送りたいデータが送れる  
+・ラズパイの方は実物のDownloadディレクトリ以下にコードをまとめているが、わからなければこのリポジトリからコピペしていじってくれればよい  
+・実行方法は、ラズパイの方でmain_test.pyを実行し、ESPrDeveloper側のスイッチをゆっくりオンオフさせる(2回カチカチさせるという意味)。この瞬間、子機から親機にデータが送られ、インターネットを介して親機からAmbientに送られる(なのでラズパイはネットにつなげておく必要がある)  
+・ESPrDeveloperの使い方がわからない？この動画を見よう！https://www.nicovideo.jp/watch/sm28456291
 
 ### 親機側のプログラムmain.pyのsetMode関数の77行目と78行目の間に、以下の４行を追加
 ```
