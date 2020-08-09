@@ -15,7 +15,7 @@ http://easel5.com/download/
 
 # 3.【実験】Arduinoとraspberry pi3とにつないで通信をしてみる
 ・GPSや温湿度データを長距離通信したい  
-・このサイトを参考にした　https://ambidata.io/examples/lora-2/  
+・このサイトを参考にした　https://ambidata.io/samples/network/lora-2/  
 ・参考コードはここ　https://github.com/AmbientDataInc/LoRa-rssi-measure  
 ・結果はこちらに公開(いずれ停止すると思うので、ambientは自分のアカウントを作ってやってみた方が良い)　https://ambidata.io/ch/channel.html?id=8279  
 ・変更すべき箇所が２点(以下に示す)あり、変更後のコードがLora_Ambient/ESPrDeveloper/ESP_Test_LoRa.inoとLora_Ambient/RaspberryPi3/main_test.pyである(このコードをESPrDeveloperとRaspberryPi3にそれぞれ用意して実行する)  
